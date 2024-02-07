@@ -1,0 +1,16 @@
+/* Define styles for larger screens */
+@media (min-width: 768px) {
+    .card {
+      max-width: 100%;
+      margin: 0 20%;
+    }
+  }
+  
+  /* Define styles for smaller screens */
+  @media (max-width: 767px) {
+    .card {
+      max-width: 100%;
+      margin: 0 10px;
+    }
+  }
+  

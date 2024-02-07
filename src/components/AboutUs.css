@@ -1,0 +1,22 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 20px;
+    width: 300px; /* Initial width */
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* Adjust width for even smaller screens */
+    }
+  }
