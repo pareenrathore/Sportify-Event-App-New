@@ -46,3 +46,11 @@
     }
   }
   
+  img#Gmap{
+    height: inherit;
+    width: inherit;
+  }
+
+  Button#Gmap{
+    width: 30%;
+  }

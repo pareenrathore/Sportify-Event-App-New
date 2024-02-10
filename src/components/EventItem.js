@@ -6,6 +6,9 @@ import Typography from "@mui/material/Typography";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
+import Gmap from "./Gmap.png";
+import { Link,  } from "react-router-dom";
+
 
 const EventItem = (props) => {
   const { event, updateEvent } = props;
@@ -55,6 +58,22 @@ const EventItem = (props) => {
               <Typography variant="body2">{event.eventDescription}</Typography>
             </CardContent>
             <CardActions>
+              <Link 
+              to="https://maps.app.goo.gl/c11byLMiYE24y9QD9"
+              >
+              <Button
+              variant="contained"
+              color="primary"
+              type="submit"
+              onClick={() => {
+                //logic
+                props.showAlert("Opening Google Map","success")
+              }}
+              id="Gmap"
+            >
+              <img src={Gmap} alt="sori darling" id="Gmap"></img>
+            </Button>
+            </Link>
               <Button
                 size="small"
                 onClick={() => {
@@ -73,7 +92,9 @@ const EventItem = (props) => {
                 >
                   Edit
                 </Button>
-              )}
+                
+              )
+              }
             </CardActions>
           </Card>
         </Box>

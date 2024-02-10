@@ -7,6 +7,7 @@ import { CardActionArea } from "@mui/material";
 
 const Home = () => {
   return (
+    <main>
     <div className="card">
       {localStorage.getItem("uname") ? (
         <h1>Welcome, {localStorage.getItem("uname")}</h1>
@@ -34,6 +35,7 @@ const Home = () => {
         </CardActionArea>
       </Card>
     </div>
+    </main>
   );
 };
 

@@ -162,15 +162,15 @@ const Events = (props) => {
             />
             <Button
               disabled={
-                event.eeventName.length < 5 ||
-                event.eeventDescription.length < 5
+                event.eeventName.length < 1 ||
+                event.eeventDescription.length < 1
               }
               variant="contained"
               color="primary"
               type="submit"
               onClick={handleClick}
             >
-              Save
+              Update
             </Button>
           </form>
         </Box>
